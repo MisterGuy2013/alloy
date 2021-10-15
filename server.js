@@ -1,3 +1,4 @@
+try {
 const http = require('http'),
     https = require('https'),
     fs = require('fs'),
@@ -53,3 +54,5 @@ server.listen(process.env.PORT || config.port, () => console.log(`${config.ssl ?
 
 
 
+}
+catch(err){console.log("error");}
